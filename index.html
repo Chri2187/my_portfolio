@@ -1,233 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-  <!-- Google Fonts Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <!-- MDB -->
-  <link rel="stylesheet" href="css/mdb.min.css" />
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <!-- AOS animate CDN -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- AOS animate CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- INTERNAL CSS-->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- INTERNAL CSS-->
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Intro settings -->
-  <style>
-    
-    /* Default height for small devices */
-    #intro-example {
-      height: 600px;
-    }
+    <!-- Intro settings -->
+    <style>
 
-    /* Height for devices larger than 992px */
-    @media (min-width: 992px) {
+      /* Default height for small devices */
       #intro-example {
-        height: 800px;
+        height: 600px;
       }
-    }
-  </style>
+    
+      /* Height for devices larger than 992px */
+      @media (min-width: 992px) {
+        #intro-example {
+          height: 800px;
+        }
+      }
+    </style>
 
-  <title>Christian Francini</title>
-  <link rel="icon" type="image/png" href="img/logo/logo_franchie.png">
-
+    <title>Christian Francini</title>
+    <link rel="icon" type="image/png" href="img/logo/logo_franchie.png">
+    
 </head>
-
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Navbar brand Logo-->
       <img src="img/logo/logo_franchie_white.png" height="30" alt="" loading="lazy" />
       <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+        class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#chisono">Chi Sono</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contatti.php">Contatti</a>
-          </li>
-        </ul>
-        <!-- Social Icons-->
-        <ul class="navbar-nav ml-auto navbar-icons d-flex flex-row">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/christianfrancini/"><i
-                class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/christian_fra"><i class="fab fa-twitter-square"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/christian.francini"><i class="fab fa-facebook"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/christian_fra/"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/Chri2187"><i class="fab fa-github"></i></a>
-          </li>
-        </ul>
-      </div>
-      <!-- Collapsible wrapper -->
+    </button>
+        
+  <!-- Collapsible wrapper -->
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#chisono">Chi Sono</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contatti.php">Contatti</a>
+      </li>
+      </ul>
+      <!-- Social Icons-->
+      <ul class="navbar-nav ml-auto navbar-icons d-flex flex-row"> 
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/christianfrancini/"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="https://twitter.com/christian_fra"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/christian.francini"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/christian_fra/"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Chri2187"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
     </div>
-    <!-- Container wrapper -->
-  </nav>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
   <!-- END NAVBAR-->
 
 
 
-  <!-- START FIRST JUMBOTRON -->
-  <header>
-    <!-- Background video -->
-    <div id="intro" class="bg-image shadow-1-strong" style="height: 90vh;">
-      <video class="w-100" style="min-height: 100%;" playsinline="" autoplay="" muted="" loop="">
-        <source src="video/Ipad - 2988.mp4" type="video/mp4">
-      </video>
-      <div class="mask" style="background: linear-gradient(15deg,rgba(29, 236, 197, 0.7),rgba(91, 14, 214, 0.7) 100%);">
-        <div id="prova" class="container  position-fixed">
-          <ul id="pointerScroll" class="nav flex-column my-auto">
-            <li class="nav-item">
-              <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="HomePage"
-                  href="#intro"></a></div>
-            </li>
-            <li class="nav-item">
-              <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="Chi Sono"
-                  href="#chisono"></a></div>
-            </li>
-            <li class="nav-item">
-              <div class="circle"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="Porfolio"
-                  href="#portfolio"></a></div>
-            </li>
-          </ul>
-        </div>
-        <div class="container d-flex align-items-center justify-content-center text-center h-100">
-          <div class="text-white">
-            <h1 class="text-capitalize animate__animated animate__zoomInDown">&ldquo;Stop thinking start doing!&rdquo;
-            </h1>
-          </div>
+<!-- START FIRST JUMBOTRON -->
+<header>
+  <!-- Background video -->
+  <div id="intro" class="bg-image shadow-1-strong" style="height: 90vh;">
+    <video class="w-100" style="min-height: 100%;" playsinline="" autoplay="" muted="" loop="">
+      <source src="video/Ipad - 2988.mp4" type="video/mp4">
+    </video>
+    <div class="mask" style="background: linear-gradient(15deg,rgba(29, 236, 197, 0.7),rgba(91, 14, 214, 0.7) 100%);">
+      <div id="pointerScroll" class="container  position-fixed">
+        <ul class="nav flex-column my-auto ">
+          <li class="nav-item">
+            <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="HomePage" href="#navbar"></a></div>
+          </li>
+          <li class="nav-item">
+            <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="Chi Sono" href="#chisono"></a></div>
+          </li>
+          <li class="nav-item">
+            <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="Porfolio" href="#portfolio"></a></div>
+          </li>
+          <li class="nav-item">
+            <div class="circle"><a class="nav-link" data-toggle="tooltip" data-placement="left" title="Contatti" href="contatti.php"></a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="container d-flex align-items-center justify-content-center text-center h-100">
+        <div class="text-white">
+          <h1 class="text-capitalize animate__animated animate__zoomInDown">&ldquo;Stop thinking start doing!&rdquo;</h1>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Background image -->
+</header>
+<!-- END JUMBOTRON -->
 
-    <!-- Background image -->
-  </header>
-  <!-- END JUMBOTRON -->
-
-  <!-- START CHI SONO -->
-  <div id="chisono" class="p-5 text-center mb-5">
-    <img data-aos="zoom-in" class="rounded-circle mb-5" src="img/foto CV.jpg" alt="">
-    <h1 id="nome" class="mb-3 display-4">Christian</h1>
-    <h1 id="cognome" class="mb-3 display-4">Francini Mascagni</h1>
-    <h4 class="mb-3">Web Developer</h4>
+<!-- START CHI SONO -->
+<div id="chisono" class="p-5 text-center mb-5">
+  <img data-aos="zoom-in" class="rounded-circle mb-5" src="img/foto CV.jpg" alt="">
+  <h1 id="nome" class="mb-3 display-4">Christian</h1>
+  <h1 id="cognome" class="mb-3 display-4">Francini Mascagni</h1>
+  <h4 class="mb-3">Web Developer</h4>
     <div id="testo" class="container mt-5">
-      <h3 class="mb-5">Classe 1987, nato in brianza, cresciuto in Toscana.</h3>
-      <p>Da sempre appassionato di tecnologia, la vita mi ha portato a prendere una strada diversa da quella che era la
-        mia passione,
-        cosi dopo aver passato qualche anno in giro per l'Europa, lavorando per una delle più importanti aziende di
-        arredamento per franchising,
-        decido di stabilirmi a Livorno, dove ho iniziato a lavorare nel settore della ristorazione con ottimi risultati,
-        fino ad arrivare
+      <h3 class="mb-5">Classe 1987, nato in brianza, cresciuto in Toscana.</h3 >
+      <p>Da sempre appassionato di tecnologia, la vita mi ha portato a prendere una strada diversa da quella che era la mia passione,
+        cosi dopo aver passato qualche anno in giro per l'Europa, lavorando per una delle più importanti aziende di arredamento per franchising,
+        decido di stabilirmi a Livorno, dove ho iniziato a lavorare nel settore della ristorazione con ottimi risultati, fino ad arrivare 
         a ricoprire la posizione di Bar Manager per una grande azienda della costa tirrenica.</p>
       <p>
-        Nel 2019 faccio ritorno a Milano, con l'intenzione di finire gli studi, purtroppo mai completati, cosi adesso
-        sono un maturando di informatica
-        ed oltre al corso di studi mi dedico allo sviluppo Web da autodidatta.</p>
-      <div class="container-fluid m-auto pt-5">
-        <h4>Tecnologie conosciute</h4>
-        <i class="fab fa-html5 fa-2x"></i>
-        <i class="fab fa-css3-alt fa-2x"></i>
-        <i class="fab fa-js-square fa-2x"></i>
-        <i class="fab fa-php fa-2x"></i>
-        <i class="fab fa-wordpress-simple fa-2x"></i>
-      </div>
+        Nel 2019 faccio ritorno a Milano, con l'intenzione di finire gli studi, purtroppo mai completati, cosi adesso sono un maturando di informatica
+         ed oltre al corso di studi mi dedico allo sviluppo Web da autodidatta.</p>
+        <div class="container-fluid m-auto pt-5">
+          <h4>Tecnologie conosciute</h4>
+          <i class="fab fa-html5 fa-2x"></i>
+          <i class="fab fa-css3-alt fa-2x"></i>
+          <i class="fab fa-js-square fa-2x"></i>
+          <i class="fab fa-php fa-2x"></i>
+          <i class="fab fa-wordpress-simple fa-2x"></i>
+        </div>
     </div>
 
     <!-- Download CV -->
-    <div id="download" class="container justify-content-center mt-5">
-      <p class="m-auto pt-5">Puoi scaricare il mio CV in PDF cliccando il bottone qui sotto</p>
-      <a type="button" class="btn btn-info btn-rounded mt-3"
-        href="https://drive.google.com/file/d/1dx1hibQ4bL6EbJrMuIzRnNKudIO6XAGE/view?usp=sharing">Download CV</a>
+  <div id="download" class="container justify-content-center mt-2 mb-5">
+    <p class="m-auto pt-4">Puoi scaricare il mio CV in PDF cliccando il bottone qui sotto</p>
+    <a type="button" class="btn btn-info btn-rounded mt-3" href="https://drive.google.com/file/d/1dx1hibQ4bL6EbJrMuIzRnNKudIO6XAGE/view?usp=sharing">Download CV</a>
+  </div> 
+</div>
+
+<!-- END CHI SONO -->
+
+<!-- Modal -->
+<div class="modal fade" id="coomingSoonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cooming Soon</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        Progetto in fase di sviluppo
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Chiudi</button>
+        
+      </div>
     </div>
   </div>
-
-  <!-- END CHI SONO -->
-
-  <!-- START CAROUSEL -->
-  <div class="container">
-
-  </div>
-  <!-- END CAROUSEL -->
+</div>
+<!-- END Modal -->
 
 
-  <!-- START PORTFOLIO -->
-  <div id="portfolio" class="container-fluid justify-content-center text-center mb-5">
-    <h1 class="mb-3">Portfolio</h1>
-    <div class="container-fluid middle">
-      <h1 data-aos="flip-up" class="text-capitalize text-white display-3">Cooming Soon</h1>
+<!-- START PORTFOLIO -->
+<div id="portfolio" class="container-fluid justify-content-center text-center mb-5">
+  <h1 class="mb-5">Portfolio</h1>
+  <!-- FIRST CARD -->
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <div class="card">
+        <div class="bg-image hover-overlay ripple" data-ripple-color="light">
+          <img src="img/chridev_img.png" class="img-fluid" style="border: 1px solid black;"/>
+          <a href="https://chridev.altervista.org">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">ChriDev</h5>
+          <p class="card-text">
+            Tesina online creata per ovviare al problema COVID-19.
+          </p>
+          <a href="https://chridev.altervista.org" class="btn btn-primary rounded-pill" >Scopri</a>
+        </div>
+      </div>
     </div>
-    <img src="img/open_pc_1.jpg" class="w-100" alt="cooming_soon_image">
-  </div>
-  <!-- END PORTFOLIO -->
-
-  <!-- START FORM CONTATTI -->
-
-
-
-  <!-- END FORM CONTATTI -->
-
-
-
-
-  <!-- START FOOTER -->
-  <footer class="bg-dark text-center text-lg-left">
-    <!-- Grid container -->
-
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-light" href="https://christianfrancini.it/">chridev.altervista.org</a>
+    <!-- SECOND CARD -->
+    <div class="col-3 mr-4 ml-4">
+      <div class="card">
+        <div class="bg-image hover-overlay ripple" data-ripple-color="light">
+          <img src="img/birdy_img.png" class="img-fluid" style="border: 1px solid black;"/>
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">BirdY</h5>
+          <p class="card-text">
+            Piattaforma per la promozione online delle PMI italiane.
+          </p>
+          <a href="#!" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#coomingSoonModal">Cooming Soon</a>
+        </div>
+      </div>
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- MDB -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- AOS CDN -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- THIRD CARD -->
+    <div class="col-3">
+      <div class="card">
+        <div class="bg-image hover-overlay ripple" data-ripple-color="light">
+          <img src="img/infoCommerce_img.png" class="img-fluid" style="border: 1px solid black;"/>
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">InfoCommerce</h5>
+          <p class="card-text">
+            Landing page di un azienda che si occupa di Digital Business Solution.
+          </p>
+          <a href="#!" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#coomingSoonModal">Cooming Soon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END PORTFOLIO -->
 
-  <script>
-    $(function () {
+
+
+
+<!-- START FOOTER -->
+<footer class="bg-dark text-center text-lg-left">
+  <!-- Grid container -->
+  
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-light" href="https://christianfrancini.altervista.org/">christianfrancini.altervista.org</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- AOS CDN -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     });
-  </script>
+</script>
 
-
+  
 </body>
 
 </html>

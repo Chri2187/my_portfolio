@@ -1,19 +1,23 @@
+
+html {
+    scroll-behavior: smooth;
+}
 body {
     overflow: overlay;
     font-family: 'Montserrat', cursive;
-
+    
 }
 
 
 /* width */
 ::-webkit-scrollbar {
     display: none;
-
+  
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-
+    
     border-radius: 10px;
 }
 
@@ -30,7 +34,7 @@ body {
     box-shadow: inset 0 0 5px rgb(167, 167, 167);
 }
 
-.navbar {
+.navbar{
     background: transparent;
 }
 
@@ -40,12 +44,12 @@ body {
     position: relative;
 }
 
-.nav-item a:hover {
+.nav-item a:hover{
     font-size: 110%;
 }
 
 
-.dropdown-menu {
+.dropdown-menu{
     background: rgb(228, 228, 228);
 }
 
@@ -60,23 +64,32 @@ body {
 }
 
 
-#prova {
+#pointerScroll {
     font-size: 110%;
     margin-top: 18%;
-    margin-left: 96%;
+    margin-left: 97%;
+    position: fixed;
+    z-index: 1;
 }
 
-.circle {
+.tooltip-inner {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: transparent;
+    
+}
+
+.circle{
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
-    background: white;
+    width: 8px;
+    height: 8px;
+    background: rgb(3, 3, 3);
 }
 
-.circle:hover {
+.circle:hover{
     width: 10px;
     height: 10px;
-    box-shadow: inset 0 0 5px rgb(167, 167, 167);
+    background: rgb(3, 3, 3);
 }
 
 .animate__zoomInDown {
@@ -86,15 +99,13 @@ body {
 .fa-twitter-square {
     color: #1DA1F2;
 }
-
-.fa-linkedin-in {
+ .fa-linkedin-in {
     color: #2867B2;
-}
+ }
 
 .fa-facebook {
     color: #3b5998;
 }
-
 .fa-instagram {
     color: white;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -103,16 +114,14 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.fa-github {
+.fa-github{
     color: white;
 }
 
-.fa-html5 {
-    color: orange;
-
+.fa-html5{
+ color: orange;
+ 
 }
-
 .fa-css3-alt {
     color: #1DA1F2;
 }
@@ -120,12 +129,11 @@ body {
 .fa-js-square {
     color: #f0db4f;
 }
-
-.fa-php {
+.fa-php{
     color: #474A8A;
 }
 
-.fa-wordpress-simple {
+.fa-wordpress-simple{
     color: #00749C;
 }
 
@@ -133,7 +141,7 @@ body {
     width: 180px;
     height: 180px;
     position: relative;
-
+    
 }
 
 .btn-rounded {
@@ -161,4 +169,8 @@ body {
 
 #formDiv {
     height: 100%;
+}
+
+.row {
+    margin-bottom: 150px;
 }
