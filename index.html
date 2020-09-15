@@ -21,16 +21,15 @@
 
     <!-- Intro settings -->
     <style>
-
       /* Default height for small devices */
       #intro-example {
-        height: 600px;
+        height: 400px;
       }
     
       /* Height for devices larger than 992px */
       @media (min-width: 992px) {
         #intro-example {
-          height: 800px;
+          height: 600px;
         }
       }
     </style>
@@ -45,7 +44,7 @@
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Navbar brand Logo-->
-      <img src="img/logo/logo_franchie_white.png" height="30" alt="" loading="lazy" />
+      <img src="img/logo/logo_franchie_white.png" height="30" alt="logo_franchie_white" loading="lazy" />
       <!-- Toggle button -->
     <button
         class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -95,49 +94,46 @@
   <!-- END NAVBAR-->
 
 
-
 <!-- START FIRST JUMBOTRON -->
-<header>
-  <!-- Background video -->
-  <div id="intro" class="bg-image shadow-1-strong" style="height: 90vh;">
-    <video class="w-100" style="min-height: 100%;" playsinline="" autoplay="" muted="" loop="">
-      <source src="video/Ipad - 2988.mp4" type="video/mp4">
-    </video>
-    <div class="mask" style="background: linear-gradient(15deg,rgba(29, 236, 197, 0.7),rgba(91, 14, 214, 0.7) 100%);">
-      <div id="pointerScroll" class="container  position-fixed">
-        <ul class="nav flex-column my-auto ">
-          <li class="nav-item">
-            <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="HomePage" href="#navbar"></a></div>
-          </li>
-          <li class="nav-item">
-            <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="Chi Sono" href="#chisono"></a></div>
-          </li>
-          <li class="nav-item">
-            <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="Porfolio" href="#portfolio"></a></div>
-          </li>
-          <li class="nav-item">
-            <div class="circle"><a class="nav-link" data-toggle="tooltip" data-placement="left" title="Contatti" href="contatti.php"></a></div>
-          </li>
-        </ul>
-      </div>
-      <div class="container d-flex align-items-center justify-content-center text-center h-100">
-        <div class="text-white">
-          <h1 class="text-capitalize animate__animated animate__zoomInDown">&ldquo;Stop thinking start doing!&rdquo;</h1>
-        </div>
+<!-- Background image -->
+<div id="intro-example" class="p-5 text-center bg-image w-100" style="background-image: url('img/road_1.jpg');">
+  <div class="mask" style="background-color: rgba(73, 76, 83, 0.7);">
+    <div id="pointerScroll" class="container  position-fixed">
+      <ul class="nav flex-column my-auto ">
+        <li class="nav-item">
+          <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="HomePage"
+              href="#navbar"></a></div>
+        </li>
+        <li class="nav-item">
+          <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="Chi Sono"
+              href="#chisono"></a></div>
+        </li>
+        <li class="nav-item">
+          <div class="circle mb-5"><a class="nav-link " data-toggle="tooltip" data-placement="left" title="Porfolio"
+              href="#portfolio"></a></div>
+        </li>
+        <li class="nav-item">
+          <div class="circle"><a class="nav-link" data-toggle="tooltip" data-placement="left" title="Contatti"
+              href="contatti.php"></a></div>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="text-capitalize animate__animated animate__zoomInDown">&ldquo;Stop thinking start doing!&rdquo;</h1>
       </div>
     </div>
   </div>
-  <!-- Background image -->
-</header>
+</div>
 <!-- END JUMBOTRON -->
 
 <!-- START CHI SONO -->
-<div id="chisono" class="p-5 text-center mb-5">
-  <img data-aos="zoom-in" class="rounded-circle mb-5" src="img/foto CV.jpg" alt="">
-  <h1 id="nome" class="mb-3 display-4">Christian</h1>
-  <h1 id="cognome" class="mb-3 display-4">Francini Mascagni</h1>
+<div id="chisono" class="container text-center mb-5 mt-5">
+  <img data-aos="zoom-in" class="rounded-circle mb-5" src="img/foto CV.jpg" alt="foto_cv">
+  <h1 id="nome" class="mb-3 display-3">Christian</h1>
+  <h1 id="cognome" class="mb-3 display-3">Francini Mascagni</h1>
   <h4 class="mb-3">Web Developer</h4>
-    <div id="testo" class="container mt-5">
+    <div id="testo" class="container-fluid mt-5">
       <h3 class="mb-5">Classe 1987, nato in brianza, cresciuto in Toscana.</h3 >
       <p>Da sempre appassionato di tecnologia, la vita mi ha portato a prendere una strada diversa da quella che era la mia passione,
         cosi dopo aver passato qualche anno in giro per l'Europa, lavorando per una delle più importanti aziende di arredamento per franchising,
@@ -187,13 +183,12 @@
 </div>
 <!-- END Modal -->
 
-
 <!-- START PORTFOLIO -->
-<div id="portfolio" class="container-fluid justify-content-center text-center mb-5">
+<div id="portfolio" class="container justify-content-center text-center mb-5">
   <h1 class="mb-5">Portfolio</h1>
   <!-- FIRST CARD -->
-  <div class="row justify-content-center">
-    <div class="col-3">
+  <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
       <div class="card" data-aos="fade-right" data-aos-duration="1500">
         <div class="bg-image hover-overlay ripple" data-ripple-color="light">
           <img src="img/chridev_img.png" class="img-fluid" style="border: 1px solid black;"/>
@@ -206,12 +201,12 @@
           <p class="card-text">
             Tesina online creata per ovviare al problema COVID-19.
           </p>
-          <a href="https://chridev.altervista.org" class="btn btn-primary rounded-pill" >Scopri</a>
+          <a href="https://chridev.altervista.org" class="btn btn-primary" >Scopri</a>
         </div>
       </div>
     </div>
     <!-- SECOND CARD -->
-    <div class="col-3 mr-4 ml-4">
+    <div class="col mb-4">
       <div class="card" data-aos="fade-up" data-aos-duration="1500">
         <div class="bg-image hover-overlay ripple" data-ripple-color="light">
           <img src="img/birdy_img.png" class="img-fluid" style="border: 1px solid black;"/>
@@ -224,12 +219,12 @@
           <p class="card-text">
             Piattaforma per la promozione online delle PMI italiane.
           </p>
-          <a href="#!" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#coomingSoonModal">Cooming Soon</a>
+          <a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#coomingSoonModal">Cooming Soon</a>
         </div>
       </div>
     </div>
     <!-- THIRD CARD -->
-    <div class="col-3">
+    <div class="col mb-4">
       <div class="card" data-aos="fade-left" data-aos-duration="1500">
         <div class="bg-image hover-overlay ripple" data-ripple-color="light">
           <img src="img/infoCommerce_img.png" class="img-fluid" style="border: 1px solid black;"/>
@@ -242,7 +237,7 @@
           <p class="card-text">
             Landing page di un azienda che si occupa di Digital Business Solution.
           </p>
-          <a href="#!" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#coomingSoonModal">Cooming Soon</a>
+          <a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#coomingSoonModal">Cooming Soon</a>
         </div>
       </div>
     </div>
@@ -284,3 +279,10 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
