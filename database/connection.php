@@ -12,5 +12,3 @@
     if ($link->connect_error) {
         die("Connection error: " .$link->connect_error);
     }
-
-?>
